@@ -1,0 +1,20 @@
+{
+    "version": "0.0.2",
+    "name": "cordova.image.rotate",
+    "cordova_name": "ImageRotate",
+    "description": "Image rotate plugin for Cordova on Android and iOS",
+    "license": "Apache 2.0",
+    "keywords": [
+        "image",
+        "rotate"
+    ],
+    "platforms": [
+        "ios"
+    ],
+    "engines": [
+        {
+            "name": "cordova",
+            "version": ">=3.4.0"
+        }
+    ]
+}

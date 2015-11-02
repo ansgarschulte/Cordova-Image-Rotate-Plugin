@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova.image.rotate" version="0.0.2"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <name>ImageRotate</name>
+
+    <description>Image rotate plugin for Cordova on iOS</description>
+
+    <author>AnsgarSchulte</author>
+
+    <keywords>image,rotate</keywords>
+
+    <license>Apache 2.0</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.4.0"/>
+    </engines>
+
+    <js-module src="www/imageRotate.js" name="imageRotate">
+        <clobbers target="cordova.plugins.imageRotate" />
+    </js-module>
+
+    <platform name="ios">
+
+      <config-file target="config.xml" parent="/widget">
+        <feature name="ImageRotate">
+          <param name="ios-package" value="ImageRotate" />
+        </feature>
+      </config-file>
+
+      <header-file src="src/ios/ImageRotate.h" target-dir="ImageRotate"/>
+      <source-file src="src/ios/ImageRotate.m" target-dir="ImageRotate"/>
+    </platform>
+</plugin>
