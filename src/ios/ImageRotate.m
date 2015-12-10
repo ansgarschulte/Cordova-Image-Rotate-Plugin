@@ -49,7 +49,8 @@
                                resultWithStatus:CDVCommandStatus_OK
                                messageAsString:newFilePath];
 
-    [self success:result callbackId:callbackId];
+    [self.commandDelegate sendPluginResult:result
+                                callbackId:callbackId];
 }
 
 - (UIImage *)fixOrientation:(UIImage *)image
